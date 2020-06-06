@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createAccount"
+    android:background="@drawable/backgroundinsta"
+    android:id="@+id/createConstraint"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/iconsinstagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createmail"
+        android:layout_width="350dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round"
+        android:drawableStart="@mipmap/email"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:textColorHint="#000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/createpass"
+        android:layout_width="350dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/pass"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createmail" />
+
+    <EditText
+        android:id="@+id/createconfirmpass"
+        android:layout_width="350dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/pass"
+        android:hint="Confirm your password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textSize="24dp"
+        android:textStyle="italic"
+        android:textColorHint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createpass" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="350dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundbutton"
+        android:text="Sign Up"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createconfirmpass" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/textinta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
